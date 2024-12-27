@@ -13,3 +13,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+@media (max-width: 768px) {
+  .container {
+    padding: 5px;
+  }
+}
