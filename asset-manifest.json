@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/anagha-portfolio/static/css/main.d7fa7c94.css",
-    "main.js": "/anagha-portfolio/static/js/main.6890e702.js",
+    "main.css": "/anagha-portfolio/static/css/main.01d45e7d.css",
+    "main.js": "/anagha-portfolio/static/js/main.3913a3c9.js",
     "static/js/453.32bc8d24.chunk.js": "/anagha-portfolio/static/js/453.32bc8d24.chunk.js",
     "static/media/helvetica-neu.ttf": "/anagha-portfolio/static/media/helvetica-neu.8a19678078a6b21c8057.ttf",
     "static/media/LaBelleAurore.woff2": "/anagha-portfolio/static/media/LaBelleAurore.a83c1c58fd7e43972e4a.woff2",
     "static/media/CoolveticaRg-Regular.woff2": "/anagha-portfolio/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
     "index.html": "/anagha-portfolio/index.html",
-    "main.d7fa7c94.css.map": "/anagha-portfolio/static/css/main.d7fa7c94.css.map",
-    "main.6890e702.js.map": "/anagha-portfolio/static/js/main.6890e702.js.map",
+    "main.01d45e7d.css.map": "/anagha-portfolio/static/css/main.01d45e7d.css.map",
+    "main.3913a3c9.js.map": "/anagha-portfolio/static/js/main.3913a3c9.js.map",
     "453.32bc8d24.chunk.js.map": "/anagha-portfolio/static/js/453.32bc8d24.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d7fa7c94.css",
-    "static/js/main.6890e702.js"
+    "static/css/main.01d45e7d.css",
+    "static/js/main.3913a3c9.js"
   ]
 }
