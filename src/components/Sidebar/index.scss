@@ -2,118 +2,124 @@
     background: #181818;
     width: 60px;
     height: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
     z-index: 3;
-    min-height: 500px;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    // padding: 0 0;
+  
     .logo {
-
-        padding: 8px 0;
-
-        img {
-            display: block;
-            margin: 8px auto;
-            width: 50px;
-            height: auto;
-        }
+      padding: 8px 0;
+  
+      img {
+        display: block;
+        margin: 8px auto;
+        width: 50px;
+        height: auto;
+      }
     }
-
+  
     nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+  
+      a {
+        font-size: 2rem; /* Use rem for scalability */
+        color: #4d4d4e;
         display: block;
-        text-align: center;
-        height: 210px;
-        position: absolute;
-        top: 50%;
-        margin-top: -120px;
-        width: 100%;
-
-        a {
-            font-size: 22px;
-            color: #4d4d4e;
-            display: block;
-            line-height: 51px;
-            height: 51px;
-            position: relative;
-            text-decoration: none;
-
-            i {
-                transition: all 0.3s ease-out;
-            }
-
-            &:hover {
-                color: #ffd700;
-
-                svg {
-                    opacity: 0;
-                }
-
-                &:after {
-                    opacity: 1;
-                }
-            }
-
-            &:after {
-                content: '';
-                font-size: 9px;
-                letter-spacing: 2px;
-                position: absolute;
-                bottom: 0;
-                display: block;
-                width: 100%;
-                text-align: center;
-                opacity: 0;
-                transition: all 0.3s ease-out;
-            }
-
-            &:first-child {
-                &::after {
-                    content: 'HOME';
-                }
-            }
+        margin: 10px 0;
+        text-decoration: none;
+        transition: color 0.3s ease-out;
+  
+        &:hover {
+          color: #ffd700;
         }
-
-        a.about-link {
-            &:after {
-                content: 'ABOUT';
-            }
+  
+        &.active svg {
+          color: #ffd700;
         }
-
-        a.contact-link {
-            &:after {
-                content: 'CONTACT';
-            }
+  
+        &:after {
+          content: attr(data-label);
+          font-size: 1rem;
+          color: #4d4d4e;
+          display: block;
+          margin-top: 5px;
+          transition: color 0.3s ease-out;
         }
-
-        a.active {
-            svg {
-                color: #ffd700;
-            }
-        }
-
+      }
     }
-
+  
     ul {
-        display: block;
-        bottom: 20px;
-        width: 100%;
-        position: absolute;
-        padding: 0;
-        list-style: none;
-        text-align: center;
-        margin: 0;
-    }
-
-    li {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  
+      li {
+        margin: 5px 0;
+  
         a {
-            padding: 7px 0;
-            display: block;
-            font-size: 15px;
-            line-height: 16px;
-
-            &:hover svg{
-                color: #ffd700;
-            }
+          font-size: 1.5rem;
+          color: #4d4d4e;
+          transition: color 0.3s ease-out;
+  
+          &:hover svg {
+            color: #ffd700;
+          }
         }
+      }
     }
-}
+  
+    @media (max-width: 768px) {
+      width: 50px;
+  
+      .logo img {
+        width: 40px;
+      }
+  
+      nav a {
+        font-size: 1.8rem;
+      }
+  
+      ul li a {
+        font-size: 1.3rem;
+      }
+    }
+  
+    @media (max-width: 480px) {
+      width: 100%;
+      height: auto;
+      flex-direction: row;
+      justify-content: space-between;
+  
+      .logo {
+        margin-left: 10px;
+      }
+  
+      nav {
+        flex-direction: row;
+  
+        a {
+          font-size: 1.6rem;
+          margin: 0 10px;
+        }
+      }
+  
+      ul {
+        flex-direction: row;
+  
+        li {
+          margin: 0 10px;
+        }
+      }
+    }
+  }
+  
