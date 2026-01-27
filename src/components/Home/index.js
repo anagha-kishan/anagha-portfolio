@@ -57,7 +57,7 @@ const Home = () => {
           </h1>
           <h2>Frontend Developer</h2>
           <a
-            href="https://drive.google.com/file/d/1HQCSnH6IYBfhBUZ1Yn1tXrb0JN1l3LCf/view?usp=drive_link"
+            href="https://drive.google.com/file/d/12-Q0bJCvr9kVpnQArOWWTrTCycIQf17A/view?usp=drive_link"
             download
             target="_blank"
             rel="noopener noreferrer"
